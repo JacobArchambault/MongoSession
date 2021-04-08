@@ -1,0 +1,22 @@
+install 5 dependencies and our handlebars fix.
+
+   npm install express express-handlebars body-parser express-session mongoose --save
+   npm install @handlebars/allow-prototype-access
+
+mongod needs to be running locally before running index.js
+
+If the package.json file is intact, then the dependencies lisst in package.json should already look like this
+
+ "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.0",
+    "handlebars": "^4.5.3",
+    "mongoose": "^5.9.4"
+  },
+
+if they do look like the above, then rather than install all these dependenceis, you only need to do this:
+
+   npm install

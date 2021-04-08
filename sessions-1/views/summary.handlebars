@@ -1,0 +1,13 @@
+<h2>Summary Page </h2>
+
+<p>{{name}}, this is the page you land on after loggin in. If you tried to type in the URL for this page without logging in, your would have been redirected back to the login form.</p>
+<p>I see you are {{age}} years old.</p>
+<p>I see you prefer {{flavor}} ice cream. Will keep these things in mind.</p>
+<p>The policy is, if you have fewer than 2 unpaid parking violations, you can have ice-cream. You have {{tickets}} outstanding tickets.
+{{#if iceCream}}
+<p>You may have some {{flavor}}, when the time is right.</p>
+{{else}}
+<p>Since you have more than 2 unpaid parking tickets, you may not have ice cream until you pay some of those parking fines</p>
+{{/if}}
+
+

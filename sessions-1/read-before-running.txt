@@ -1,0 +1,11 @@
+install 6 packages.
+
+here are the first 5, which we would normall install
+   npm install express express-handlebars body-parser express-session mongoose --save
+
+and importantly, for the work-around...
+   npm insteall handlebars@4.5.3 --save
+
+mongod needs to be running locally before running index.js
+
+

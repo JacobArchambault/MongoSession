@@ -1,0 +1,24 @@
+<h2>Page 3:</h2>
+<h4>Sort Users by City</h4>
+<br>
+<form method='post' action='\page3'>
+<p>City <select name='city'> 
+  <option value = 'select'>Select a City</option>
+  <option value = 'Chicago'>Chicago</option>
+  <option value = 'Bangor'>Bangor</option>
+  <option value = 'Detroit'>Detroit</option>
+</select>
+<p><input type='submit' value='submit'></p>
+</form></p>
+
+{{#if tableVisible}}
+
+<table class="table">
+<tr><th>Name</th><th>City</th><th>Violations</th></tr>
+{{#each cityUsers}}
+  <tr><td>{{full_name}}</td><td>{{city}}</td><td>{{violations}}</td></tr>
+{{/each}}
+</table>
+
+{{/if}}
+<p>Whether or not your name is in the list above, because of session data those unpaid parking tickets will follow you, no matter what page you flee to. </p>
